@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build and Run NASM",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "nasm -f win64 -o main.obj main.asm && gcc -o main.exe main.obj -Wl,--subsystem,console -Wl,--entry=main && main.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
