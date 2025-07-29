@@ -1,2 +1,2 @@
 # Assembly
-Learning from scratch
+Learning Assembly from scratch
